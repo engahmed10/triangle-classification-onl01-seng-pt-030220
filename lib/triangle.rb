@@ -9,8 +9,6 @@ class Triangle
     if ((@l1 + @l2) <= @l3 ||  (@l2 + @l3) <= @l1 || (@l1 + @l3) <= @l2 ||  (@l1 || @l2 || @l3) <= 0)
       begin
         raise TriangleError
-    #  rescue TriangleError => error
-          #puts error.message
       end
     else
       ## claculate if equilateral or isosceles or scalene
@@ -28,9 +26,7 @@ class Triangle
  end
 
  class TriangleError < StandardError
-   def message
-     "you must give the valid sides"
-   end
+
  end
 
 end
