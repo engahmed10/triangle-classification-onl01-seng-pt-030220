@@ -22,7 +22,8 @@ class Triangle
       end
       if @l1 != @l2 || @l1 != @l3 || @l2 != @l3
           return :scalene
-      end    end
+      end
+    end
 
  end
 
